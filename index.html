@@ -49,14 +49,14 @@
           <div>
             As the first talk of the workshop, we start by explaining and motivating propositional/weak/objective type theory (PTT), which is a type theory without any reduction rules. We compare two different categorical notions that aim to model PTT: compression categories with propositional identity types, and path categories. Although comprehension categories are well-studied, demonstrating that a category has the required structure for PTT can be difficult. Path categories simplify the requirements by taking inspiration from abstract homotopy theory. In this talk we will show an equivalence between these two notions, building upon the work of the invited speakers, and highlighting how their research connects.
         </div>
-      </details>
-      <li> 12:00-13:30 Lunch</li>
+      </details></li>
+      <li> 12:00-13:30 Lunch</li><li>
       <details>
         <summary>13:30-14:30 Theo Winterhalter, A conservative and constructive translation from extensional type theory to weak type theory</summary>
           <div> I will present work conducted a few years ago with Simon Boulier on translating ETT to WTT, which we formalised in the Coq proof assistant. This translation starts a typing derivation potentially using equality reflection and produces a proof certificate that can be trivially checked to be correct. This in a sense echoes De Bruijn’s <it></it>plea for weaker frameworks</it> since the translation in particular shows that ETT (and thus intensional type theory) is conservative over WTT.</div>
       </details>
     </li><li>
-      14:30-15:00 Coffee break
+      14:30-15:00 Coffee break </li><li>
       <details>
         <summary>15:00-16:00 Sam Speight, Higher-Dimensional Realizability for Intensional Type Theory</summary>
         <div>I will describe recent work on higher-dimensional realizability models of intensional type theory. The notion of model that we employ is that given by path categories. The models are based on groupoids, and realizers themselves carry higher-dimensional structure, so that a realizer for an identification (isomorphism) is a "path".</div>
@@ -70,7 +70,7 @@
           
         </details>
         </li>
-    <li>18:30 Conference dinner at <a href="https://abeautifulmess.nl">A beautiful mess</a></li>
+    <li>18:30 Conference dinner at <a href="https://abeautifulmess.nl">A Beautiful Mess</a></li>
     </ul>
 
 
@@ -80,38 +80,38 @@
       <ul>
         <li>
     <details>
-      <summary>10:00-11:00, Matteo Spadetto
+      <summary>10:00-11:00 Matteo Spadetto, Weak type theories: A conservativity result for homotopy elementary types.
       </summary>
-        <div>
-          As the first talk of the workshop, we start by explaining and motivating propositional/weak/objective type theory (PTT), which is a type theory without any reduction rules. We compare two different categorical notions that aim to model PTT: compression categories with propositional identity types, and path categories. Although comprehension categories are well-studied, demonstrating that a category has the required structure for PTT can be difficult. Path categories simplify the requirements by taking inspiration from abstract homotopy theory. In this talk we will show an equivalence between these two notions, building upon the work of the invited speakers, and highlighting how their research connects.
-      </div>
+        <div> In this talk, we consider a dependent type theory that includes propositional identity types, propositional dependent sum types, and propositional dependent product types: in other words, the intensional identities, the dependent sums, and the dependent products of our theory satisfy the usual Martin-Löf computation rules, but only in propositional form (see [3, 4, 5]). We will refer to such a theory as a weak type theory (or a propositional type theory). In a recent paper [6] the authors conjecture that such a theory is sufficient for performing all of constructive mathematics and formalising most of the HoTT book.
+
+          The aim of this talk is to address this question, by identifying a particular family of type-judgements, called h-elementary, of a weak type theory such that the corresponding extensional type theory is conservative over it relative to the family of h-elementary types. Our main result informally asserts that, for judgements essentially concerning h-sets, despite the non-negligible weakening of the weak type theories with respect to the extensional ones, reasoning with the latter or the former is equivalent.
+          
+          Our argument is fully presented in [7]. It is obtained by adapting a proof strategy introduced in [2] and exploits the notion of category with attributes [1] to phrase the semantics of theories of dependent type.
+          
+          [1] 1991. Moggi. A category-theoretic account of program modules.
+          [2] 1995. Hofmann. Conservativity of equality reflection over intensional type theory.
+          [3] 2013. Coquand, Danielsson. Isomorphism is equality.
+          [4] 2018. van den Berg. Path categories and propositional identity types.
+          [5] 2020. Bocquet. Coherence of strict equalities in dependent type theories.
+          [6] 2021. van den Berg, den Besten. Quadratic type checking for objective type theory.
+          [7] 2023. Spadetto. A conservativity result for homotopy elementary types in dependent type theory.
+          </div>
     </details>
     
     <details>
-      <summary>11:30-12:30, Benno van den Berg</summary>
-        <div>In my thesis, I examined toposes of actions of topological monoids on sets. In this talk, I will show how that work fits into the setting of classifying toposes, and describe some work in progress on extracting generalizations of classic model theory results from this construction.</div>
+      <summary>11:30-12:30 Benno van den Berg, Towards homotopy canonicity for propositional type theory</summary>
+        <div>At TYPES 2019 Christian Sattler presented joint work with Chris Kapulkin showing that ordinary homotopy type theory satisfies homotopy canonicity. I will explain why I believe their method should work for propositional type theory as well. Indeed, for propositional type theory homotopy canonicity is arguably more natural, because it is the only type of canonicity that can be expected.</div>
     </details>
   </li><li>
     <details>
-      <summary>14:00-15:00 Rafael Bocquet</summary>
-      <div>It is well known that the epimorphisms in the category of sets are
-exactly the surjections. But what are the epimorphisms of types?
-Thinking of types as spaces, and following literature in algebraic
-topology, we characterise epimorphisms of types in homotopy type theory
-(HoTT) as so-called acyclic maps. An acyclic map is a map whose fibres
-are acyclic types, and a type is acyclic if its suspension is contractible.
-
-We also consider a weaker notion: a type is k-acyclic (for k ≥ -2) if
-its suspension is k-connected. We show, for example, that the
-classifying type of a group G is 2-acyclic if and only if the group G is
-perfect, i.e. its abelianisation is trivial.
-
-Finally, we comment on the relations between acyclic and connected maps,
-sketch directions for future research, and describe how the Higman
-group, a well-known example in combinatorial group theory, allows us to
-construct a nontrivial acyclic type.
-
-This is joint work with Ulrik Buchholtz and Egbert Rijke.</div>
+      <summary>14:00-15:00 Rafael Bocquet, Towards coherence theorems for equational extensions of type theories</summary>
+      <div>The conservativity of Extensional Type Theory (ETT) over Intensional
+        Type Theory (ITT) was proven by Martin Hofmann. The proof relies on
+        the presence of the Uniqueness of Identity Proofs (UIP) principle in
+        ITT.
+        
+        In this talk, I will present my progress towards generalization of
+        these results to type theories without UIP, such as variants of HoTT.</div>
     </details>
   </li>
   
