@@ -1,0 +1,206 @@
+body {
+    min-height: 90%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.home-header {
+    position: relative;
+    background-image: url('Images/title.JPG'); /* Replace 'banner.jpg' with the correct image file name */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px 0; /* Increase padding to make the banner more prominent */
+    text-align: center;
+}
+
+.program-header {
+    position: relative;
+    background-image: url('Images/program.JPG'); /* Replace 'banner.jpg' with the correct image file name */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px 0; /* Increase padding to make the banner more prominent */
+    text-align: center;
+}
+
+.participants-header {
+    position: relative;
+    background-image: url('Images/participants.JPG'); /* Replace 'banner.jpg' with the correct image file name */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px 0; /* Increase padding to make the banner more prominent */
+    text-align: center;
+}
+
+.practical-header {
+    position: relative;
+    background-image: url('Images/practical.JPG'); /* Replace 'banner.jpg' with the correct image file name */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px 0; /* Increase padding to make the banner more prominent */
+    text-align: center;
+}
+
+.header-credit {
+    position: absolute;
+    bottom: 10px; /* Position it at the bottom */
+    right: 15px; /* Position it to the right */
+    font-size: 0.8em; /* Smaller, unobtrusive text */
+    color: rgba(255, 255, 255, 0.7); /* Semi-transparent white to blend nicely */
+    background-color: rgba(0, 0, 0, 0.3); /* Add a background for readability */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar {
+    background-color: transparent; /* Start as transparent */
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+
+}
+
+.menu-icon {
+    background-color: transparent;
+    display: none;  /* Hidden by default, only shown on small screens */
+    cursor: pointer;
+    font-size: 20px;
+    position: fixed; /* Keeps the menu icon fixed at the top of the page */
+    top: 10px;      /* Aligns with the navbar */
+    left: 20px;    /* Keeps it aligned with the right side of the screen */
+    z-index: 1001;  /* Ensure it stays above other elements */
+}
+
+.sidebar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(68, 68, 68, 0.1); /* Transparent background */
+    padding: 10px;
+    position: relative;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar ul li {
+    margin-left: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+}
+
+.sidebar ul li a:hover {
+    background: #666;
+}
+
+
+.mobile-sidebar {
+    display: none;
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left) */
+    justify-content: flex-start; /* Align items to the start (top) */
+    padding: 20px;
+}
+
+.mobile-sidebar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left) */
+}
+
+.mobile-sidebar ul li {
+    margin: 15px 0;
+}
+
+.mobile-sidebar ul li a {
+    width: 100%; /* Adjust to take full width */
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+}
+
+.mobile-sidebar ul li a:hover {
+    background: #666;
+}
+
+
+  
+main {
+    margin-top: 500px;
+    min-height: 90%;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    padding-bottom: 60px;
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 599px) {
+    .menu-icon {
+        display: block; /* Show menu icon on small screens */
+    }
+
+    .neg-menu-icon {
+        display : none;
+    }
+
+    .sidebar {
+        display: none; /* Initially hide the sidebar on small screens */
+    }
+
+    .mobile-sidebar.active {
+        display: flex; /* Show the sidebar when active */
+    }
+}
