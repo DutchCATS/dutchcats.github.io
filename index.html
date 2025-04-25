@@ -62,29 +62,43 @@
 
     <li>
       <details>
-        <summary>13:15-13:45 Daniël Otten, TBA
+        <summary>13:15-13:45 Daniël Otten, Matching (Co)patterns with Cyclic Proofs
         </summary>
         <div><b>Abstract:</b>
-          TBA
+          We show how (co)pattern matching can be seen as a cyclic proof system via the Curry-Howard correspondence: cycles correspond to recursive calls, while the soundness condition makes sure that the function terminates. In cyclic proof systems, one replaces induction axioms with circular reasoning. The advantage of these systems lies in proof search: to apply (co)induction we need to guess the right (co)induction hypothesis, whereas with cycles we can start generating the proof until our current goal matches one that we have seen before.
+
+          Often, one obtains a conservativity result: cyclic proofs do not derive more than inductive proofs. In type theory, we have similar results showing that every function defined using (co)pattern matching can already be implemented using primitive (co)induction rules. However, existing results place more restrictions on recursive calls than proof assistants do in practice. Our goal is to explain the correspondences, and we hope to use techniques from cyclic proof theory to extend the type theoretic conservativity results.
+
+          This is joint work in progress with Lide Grotenhuis.
         </div>
       </details>
     </li>
     <li>
       <details>
-        <summary>13:45-14:15 Niels van der Weide, TBA
+        <summary>13:45-14:15 Niels van der Weide, Impredicative Encodings of Inductive and Coinductive Types
         </summary>
         <div><b>Abstract:</b>
-          TBA
+          In impredicative type theory (System F, also known as λ2), it is possible to define inductive data types, such as natural numbers and lists. It is also possible to define coinductive data types such as streams. They work well in the sense that their (co)recursion principles obey the expected computation rules (the β-rules). Unfortunately, they do not yield a (co)induction principle, because the necessary uniqueness principles are missing (the η-rules). Awodey, Frey, and Speight used a extension of the Calculus of Constructions (λC) with Σ-types, identity-types, and functional extensionality to define System F style inductive types with an induction principle, by encoding them as a well-chosen subtype, making them initial algebras.
+
+          In this paper, we extend their results to coinductive data types, and we detail the example of the stream data type with the desired coinduction principle (also called bisimulation). To do that, we first define quotient types (with the desired η-rules) and we also need a stronger form of the definable existential types. We also show that we can use the original method by Awodey, Frey and Speight for general inductive types by defining W-types with an induction principle. The dual approach for streams can be extended to M-types, the generic notion of coinductive types, and the dual of W-types.
         </div>
       </details>
     </li>
     <li>14:15-14:45 <i>break</i> </li>
     <li>
       <details>
-        <summary>14:45-15:15 Kobe Wullaert, TBA
+        <summary>14:45-15:15 Kobe Wullaert, Rezk completion for topoi
         </summary>
         <div><b>Abstract:</b>
-          TBA
+          Topos theory offers a powerful unifying framework across mathematics, connecting fields from logic to algebraic geometry. Topoi are rich categorical structures that inherently support a specific kind of hyperdoctrine, providing a denotational semantics for certain logics and type theories.
+          A pivotal result by Pitts et al. characterizes these topos-induced hyperdoctrines as triposes (Topoi Representing Indexed Partially Ordered Sets).
+          Conversely, the tripos-to-topos construction provides a uniform method for building a topos from any tripos, encompassing classical examples like localic and realizability toposes.
+          
+          This talk explores the translation of the tripos-to-topos construction into the setting of HoTT/UF.
+          We observe that if the base category defining the hyperdoctrine does not satisfy univalence, the resulting topos is generally also non-univalent.
+          To address this, we prove that the Rezk completion, a standard way to obtain a univalent category, commutes with the structure of an elementary topos in a 2-categorical sense.
+          Specifically, we demonstrate that the biadjunction characterizing the Rezk completion lifts to bicategories of elementary topoi.
+          Our proof strategy leverages displayed technology, enabling a modular construction of Rezk completions for categories equipped with additional structure.
         </div>
       </details>
     </li>
@@ -102,19 +116,21 @@
     <li>15:45-16:15 <i>break</i> </li>
     <li>
       <details>
-        <summary>16:15-16:45 Makoto Fujiwara, TBA
+        <summary>16:15-16:45 Makoto Fujiwara, On the separation techniques of weak logical principles over intuitionistic arithmetic
         </summary>
         <div><b>Abstract:</b>
-          TBA
+          In these several decades, the hierarchy of weak fragments of logical principles over intuitionistic arithmetic has been studied systematically.
+          These principles include the law-of-excluded-middle, the double-negation-elimination and De morgan's law.
+          In this talk, we overview the research on the hierarchy and discuss about the separation techniques between these principles.
         </div>
       </details>
     </li>
     <li>
       <details>
-        <summary>16:45-17:15 Pim Otte, TBA
+        <summary>16:45-17:15 Pim Otte, Tutte's theorem as an educational formalization project
         </summary>
         <div><b>Abstract:</b>
-          TBA
+          Tutte's theorem is a core result in graph theory, which the describes conditions for existence of perfect matchings in graphs. I have formalized this theorem in Lean and it is ready for inclusion in mathlib. Additionally, I extracted a framework for educational formalization projects, based on this project that I undertook to learn more about formalization. In this talk, I will discuss some interesting elements of the formalization of Tutte's theorem, as well as this educational framework. I propose that this framework can be applied both in traditional and community-driven educational settings and that it helps to efficiently teach formalization by minimizing teacher input.
         </div>
       </details>
     </li>
