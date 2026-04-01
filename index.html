@@ -49,9 +49,87 @@
 
   <h2> DutchCATS meeting in Delft, 10 April 2026</h2>
 
-  Details to be announced.
-  
-  To sign up, and possibly propose a talk, please fill in <a href="https://forms.gle/NgY2pdahpgfhRhTR9">the registration form</a>.
+    <h3>Location</h3>
+    We meet in the Social Data Lab (building 28)</a>, Van Mourik Broekmanweg 6, 2628 XE Delft (<a href="https://maps.app.goo.gl/9eaHqQiQ7VKkiUyj9">Google Maps</a>).
+
+<h3>Programme</h3>
+
+  <p style="margin-left: 40px;"><em>arrival (13:00)</em></p>
+  <ul style="list-style-type: none;">
+
+    <li>
+      <details>
+        <summary> 13:10-13:40 Nathaniel Burke: Applying Non-Linear Reductions in Normalisation by Evaluation</summary>
+        <div><b>Abstract:</b>
+          A key lemma for proving decidability of dependent typechecking is decidability of judgemental equality/conversion. One technique for establishing this is normalisation by evaluation (NbE).
+
+	  In the standard presentation of NbE for dependent types, we first prove normalisation, by corollary obtain injectivity of type formers and then prove decidability of equality for normal forms. Unfortunately, this approach does not scale to type theories where we need to interleave normalisation and conversion-checking, e.g. to apply non-linear reductions such as 'n - n = 0' or the 'cast-refl' rule from Observational Type Theory.
+
+	  In this talk, I will introduce NbE for dependent types and explain how we can fix this problem with non-linear reductions by taking a more relaxed definition of normal forms. I will also discuss a work-in-progress Agda mechanisation.
+        </div>
+      </details>
+    </li>
+
+    <li>
+      <details>
+        <summary>13:40-14:10 Tom de Jong: (Counter)examples of injective types</summary>
+        <div><b>Abstract:</b>
+	  In the context of univalent foundations (a.k.a. homotopy type theory), injective types were discussed by Martín Escardó in an MSCS paper from 2021. The interest in injectivity originated in its use to construct infinite searchable types, but the topic turned out to have a rather rich theory on its own. With classical logic, the injective types are simply the nonempty types. Constructively, things are more interesting with examples and counterexamples a plenty, as I will explain in this talk.
+
+	  This is joint work with Martín Escardó. A preprint (with associated Agda formalization) is available as arXiv:2601.12536.
+        </div>
+      </details>
+    </li>
+
+    <li>14:10-14:30 <i>break</i> </li>
+
+    <li>
+      <details>
+        <summary>14:30-15:00 Josje van der Laan: A Directed Refinement of Constructive Ordinals in Algebraic Set Theory</summary>
+        <div><b>Abstract:</b>
+          Within the framework of Algebraic Set Theory (AST), as developed by Joyal and Moerdijk, ordinals may be defined categorically as the initial ZF-algebra with an inflationary successor operation. This construction coincides with the notions of ordinal in constructive set theory (CZF) and in Homotopy Type Theory (HoTT). In addition, Joyal and Moerdijk introduce Tarski ordinals, a particular initial ZF-algebra whose successor operation is monotone. This construction provides a constructive proof of Tarski’s fixed point theorem and the resulting ordinals are directed.
+
+	  In this work, we introduce and analyze a new variant of directed ordinals obtained as the initial ZF-algebra with an inflationary successor whose strict downsets are closed under binary joins. We show the existence of this initial object and study its structural properties. The resulting construction gives a directed variant of the usual constructive ordinals in Algebraic Set Theory.
+
+        </div>
+      </details>
+    </li>
+
+    <li>
+      <details>
+        <summary>15:00-15:30 Niyousha Najmaei: For Generalised Algebraic Theories, Two Sorts Are Enough</summary>
+        <div><b>Abstract:</b>
+          Generalised algebraic theories (GATs) allow multiple sorts indexed over each other. For example, the theories of categories or Martin-L{ö}f type theories form GATs. Categories have two sorts, objects and morphisms, and the latter are double-indexed over the former. Martin-L{ö}f type theory has four sorts: contexts, substitutions, types and terms. For example, types are indexed over contexts, and terms are indexed over both contexts and types. In this paper we show that any GAT can be reduced to a GAT with only two sorts, and there is a section-retraction correspondence (formally, a strict coreflection) between models of the original and the reduced GAT. In particular, any model of the original GAT can be turned into a model of the reduced (two-sorted) GAT and back, and this roundtrip is the identity.
+	  The reduced GAT is simpler than the original GAT in the following aspects: it does not have sort equalities; it does not have interleaved sorts and operations; if the original GAT did not have interleaved sorts and operations, then the reduced GAT won't have operations interleaved between different sorts. In a type-theoretic metatheory, the initial algebra of a GAT is called a quotient inductive-inductive type (QIIT). Our reduction provides a way to implement QIITs with sort equalities or interleaved constructors which are not allowed by Cubical Agda. An instance of our reduction is the well-known method of reducing mutual inductive types to a single indexed family. Our approach is semantic in that it does not rely on a syntactic description of GATs, but instead, on Uemura's bi-initial characterisation of the category of (finite) GATs in the 2-category of finitely complete categories with a chosen exponentiable morphism.
+
+	  This is joint work with Samy Avrillon, Ambrus Kaposi, Ambroise Lafont, Johann Rosain. The preprint is available here: https://arxiv.org/abs/2601.19426
+        </div>
+      </details>
+    </li>
+
+    <li>15:30-16:00 <i>break</i> </li>
+    
+    <li>
+      <details>
+        <summary>16:00-16:30 Niels van der Weide: A realisability model of linear dependent type theory</summary>
+        <div><b>Abstract:</b>
+          We give a realisability model of linear dependent type theory with an impredicative universe of types. To do so, we use the notion of a linear comprehension category. Such comprehension categories nicely feature each of the features of linear dependent type theory, which we encode via a Grothendieck fibration and a monoidal fibration. Specifically, we show that each linear combinatory algebra gives rise to a linear comprehension category. The model construction has been formalised in the proof assistant Rocq using the UniMath library. This talk is based on joint work with Sam Speight.
+        </div>
+      </details>
+    </li>
+    
+    <li>
+      <details>
+        <summary>16:30-17:00 Fernando Chu: AI for formalization of category theory, an experience report </summary>
+        <div><b>Abstract:</b>
+          Recently, AI has become increasingly better at formalizing mathematics. For example, on March 2, Math Inc. announced that their AI had formalized the field-medal-winning solution to the sphere packing problem in 24 dimensions, writing 500k Lean LoC in two weeks. Nonetheless, it is widely accepted that AI's code is of very low quality, and so its relevance for building libraries of formalized mathematics remains unclear. In this talk, we argue that AI can already be used with great effectiveness to aid library contributors and maintainers. We support this claim through examples from our own experience formalizing category theory in Lean, as well as through other examples we have found in the Mathlib community.
+        </div>
+      </details>
+    </li>
+
+      <li>18:30 Dinner at <a href="https://www.pizzabeppe.nl/en/locations/delft/markt">Pizza Beppe</a> at Markt 9a, 2611GP Delft
+ (<a href="https://maps.app.goo.gl/MAR2YwkmHQH1jzAi7">Google Maps</a>)</li>
+    </ul>
 
   
   <h2>DutchCATS meeting in Utrecht, 2 May 2025</h2>
